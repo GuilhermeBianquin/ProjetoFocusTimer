@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --timer-color: #323238;
+    --base-color: 240;
+    --bg-button-ligth: hsla(var(--base-color), 9%, 89%, 1);
+    --bg-button: hsla(var(--base-color), 6%, 21%, 1);
+    --bg-button-second: #02799D;
+    --icon-color: #ffffff;
+    --bg-body: #fcfcfc;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--timer-color);
+
+    display: grid;
+    min-height: 100vh;
+}
+
+.page{
+    display: flex;
+    gap: 19.2rem;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+main{
+    justify-self: center;
+}
+
+
+.play, .pause, .stop, .positive, .negative{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#timer{
+    font-size: 12.6rem;
+    font-weight: 500;
+    line-height: 14.8rem;
+    display: flex;
+    margin-bottom: 1.7rem;
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.0rem;
+}
+
+
+footer button{
+    border-radius: 24px;
+    border: none;
+    padding: 4.8rem;
+    margin: 0 3.2rem 3.2rem 0;
+    width: 15rem;
+    height: 15rem;
+    align-items: center;
+}
+
+.forest svg path, .rain svg path, .coffe svg path, .fireplace svg path{
+    fill: var(--bg-button);
+    background-color: var(--bg-button-ligth);
+}
+
+.ToChange svg path{
+    fill: var(--icon-color);
+}
+
+.ToChange{
+    background-color: var(--bg-button-second);
+}
+
+.hide{
+   display: none; 
+}
